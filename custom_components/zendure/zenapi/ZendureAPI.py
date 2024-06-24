@@ -1,6 +1,6 @@
-'''
+"""
 Zendure API used by the Mobile App. Handles log in and device info interfaces
-'''
+"""
 
 import os
 import sys
@@ -8,8 +8,7 @@ import logging
 import json
 import requests
 from requests.adapters import HTTPAdapter
-from requests.packages.urllib3.util.retry import Retry
-import urllib.parse
+from urllib3.util.retry import Retry
 
 loglevel = os.environ.get("LOG_LEVEL", "info").upper()
 FORMAT = '%(asctime)s:%(levelname)s: %(message)s'
@@ -20,8 +19,8 @@ PROD_NAME = os.environ.get('PROD_NAME', 'SolarFlow2.0')
 SF_API_BASE_URL = "https://app.zendure.tech"
 
 
-class ZendureAPI():
-    ''' An API class to handle communication with the Zendure API '''
+class ZendureAPI:
+    """ An API class to handle communication with the Zendure API """
 
     def __init__(self, verifySSL=True, zen_api="https://app.zendure.tech/v2", parameters=None):
         self.baseUrl = f'{SF_API_BASE_URL}'

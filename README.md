@@ -1,10 +1,9 @@
 # Notice
 
-The component and platforms in this repository are not meant to be used by a
-user, but as a "blueprint" that custom component developers can build
-upon, to make more awesome stuff.
+This will be a Zendure SolarFlow Integration for HomeAssistant via HACS (maybe)..
 
-HAVE FUN! 😎
+Big thanks to reinhard-brandstaedter! From his Project ["Solarflow Statuspage"](https://github.com/reinhard-brandstaedter/solarflow-statuspage) I got the API-Communincation
+
 
 ## Why?
 
